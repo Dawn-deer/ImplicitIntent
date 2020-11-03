@@ -29,14 +29,7 @@ public class FirstActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==0 && resultCode==0) {
-            String str=data.getStringExtra("result");
-            Toast.makeText(this,str,Toast.LENGTH_LONG).show();
-        }
-    }
+  
 
 
 
